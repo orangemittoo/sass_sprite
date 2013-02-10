@@ -1,0 +1,50 @@
+@import "compass";
+
+//▼normal
+//width,heightを出力
+$normal-sprite-dimensions: true;
+//sprite内の画像の間隔
+$normal-spacing: 200px;
+//sprite内の画像の並び方
+	//smart : 余白無く詰めて並べる
+	//diagonal : 斜めに並べる
+	//※この変数を定義するとspacingは無視される
+$normal-layout:diagonal;
+//スプライト画像を生成する画像を指定
+@import "normal/*.png";
+//出力
+@include all-normal-sprites;
+
+//▼hover
+$hover-sprite-dimensions: true;
+$hover-spacing: 20px;
+@import "hover/*.png";
+//出力
+@include all-hover-sprites;
+
+//▼manualclass
+$manualclass-sprite-dimensions: true;
+@import "manualclass/*.png";
+
+.top    { @include manualclass-sprite(icon1);}
+.left   { @include manualclass-sprite(icon2);}
+.right   { @include manualclass-sprite(icon3);}
+.bottom { @include manualclass-sprite(icon4);}
+
+//▼manualclass
+$icons: sprite-map("manualsprite/*.png");
+p{
+	background: $icons;
+	//width,heightを出力
+    @include sprite-dimensions($icons,icon3);
+    //引数：スプライト画像, 画像, offsetX, offsetY;
+    background-position: sprite-position($icons,icon3, -5, -5);
+}
+
+#container {
+	width : 950px;
+	margin: 0 auto;
+	dt {
+		margin-top: 20px;
+	}
+}

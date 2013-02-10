@@ -1,0 +1,83 @@
+.normal-sprite, .normal-icon1, .normal-icon2, .normal-icon3, .normal-icon4 {
+  background: url('../img/normal-s161dd073d3.png') no-repeat;
+}
+
+.normal-icon1 {
+  background-position: 0 -144px;
+  height: 48px;
+  width: 48px;
+}
+
+.normal-icon2 {
+  background-position: -48px -96px;
+  height: 48px;
+  width: 48px;
+}
+
+.normal-icon3 {
+  background-position: -96px -48px;
+  height: 48px;
+  width: 48px;
+}
+
+.normal-icon4 {
+  background-position: -144px 0;
+  height: 48px;
+  width: 48px;
+}
+
+.hover-sprite, .hover-icon1 {
+  background: url('../img/hover-s8b2cbcaa71.png') no-repeat;
+}
+
+.hover-icon1 {
+  background-position: 0 -68px;
+  height: 48px;
+  width: 48px;
+}
+.hover-icon1:hover, .hover-icon1.icon1_hover, .hover-icon1.icon1-hover {
+  background-position: 0 0;
+}
+
+.manualclass-sprite, .top, .left, .right, .bottom {
+  background: url('../img/manualclass-s054f6b9b7e.png') no-repeat;
+}
+
+.top {
+  background-position: 0 0;
+  height: 48px;
+  width: 48px;
+}
+
+.left {
+  background-position: 0 -144px;
+  height: 48px;
+  width: 48px;
+}
+
+.right {
+  background-position: 0 -96px;
+  height: 48px;
+  width: 48px;
+}
+
+.bottom {
+  background-position: 0 -48px;
+  height: 48px;
+  width: 48px;
+}
+
+p {
+  background: url('../img/manualsprite-s6f22de888a.png');
+  height: 48px;
+  width: 48px;
+  background-position: -5px -101px;
+}
+
+#container {
+  width: 950px;
+  margin: 0 auto;
+}
+#container dt {
+  margin-top: 20px;
+}
